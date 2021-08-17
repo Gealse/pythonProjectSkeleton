@@ -1,7 +1,7 @@
 from Controller import Controller
 
-def mainProgram(self):
+def mainProgram():
     controller = Controller()
-    controller.mainProgram
+    controller.mainController()
 
-mainProgram
+mainProgram()
