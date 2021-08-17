@@ -1,12 +1,20 @@
-from WebController import WebController
-
+from RawDataController import RawDataController
+from TransformController import TransformController
+from ProcessController import ProcessController
+from OutputController import OutputController
 
 class Controller(object):
 
-    webController = None
+    rawDataController = None
+    transformController = None
+    processController = None
+    outputController = None
 
     def __init__(self):
-        self.webController = WebController()
+        self.rawDataController = RawDataController()
+        self.transformController = TransformController()
+        self.processController = ProcessController()
+        self.outputController = OutputController()
 
     def setCredentials(self):
         pass
